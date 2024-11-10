@@ -21,6 +21,14 @@ const HeadingComponent = () => (
     </div>
 );
 
+//inserting React Element inside React Component
+const HeadingComponent2 = () => (
+    <div>
+        {jsxHeading}
+        <h1 className="heading">React Functional Component</h1>
+    </div>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent/>);
+root.render(<HeadingComponent2/>);
