@@ -1,6 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./components/Header";
+import Body from "./components/Body";
 
+
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header />
+            <Body />
+        </div>
+    );
+};
+
+/**
 const heading = React.createElement("h1",{id:"heading"},"React Learning");
 
 // React Element
@@ -28,7 +41,9 @@ const HeadingComponent2 = () => (
         <h1 className="heading">React Functional Component</h1>
     </div>
 );
+*/
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent2/>);
+root.render(<AppLayout />);
